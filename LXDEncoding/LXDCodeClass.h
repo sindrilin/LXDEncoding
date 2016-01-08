@@ -6,8 +6,12 @@
 //  Copyright © 2016年 SindriLin. All rights reserved.
 //
 
-#import "LXDEncoding.h"
+#import <Foundation/Foundation.h>
 
 @interface LXDCodeClass : NSObject<NSCoding>
+
+@property (nonatomic, copy) NSString * abc;
+@property (nonatomic, copy) NSString * efg;
+@property (nonatomic, copy) NSString * hij;
 
 @end

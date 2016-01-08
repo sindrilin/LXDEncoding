@@ -14,7 +14,6 @@
 
 typedef void(^LXDCodingHandler)(objc_property_t property, NSString * propertyName);
 
-
 /// 遍历属性列表
 #define LXDCodingHandlerDef    \
     - (void)codePropertiesWithHandler: (LXDCodingHandler)codingHandler  \
@@ -34,9 +33,10 @@ typedef void(^LXDCodingHandler)(objc_property_t property, NSString * propertyNam
 /// 反序列化
 #define LXDInitWithCoder    \
     - (instancetype)initWithCoder: (NSCoder *)aDecoder {   \
-    [self codePropertiesWithHandler: ^(objc_property_t property, NSString * key) {   \
-        [self setValue: [aDecoder decodeObjectForKey: key] forKey: key]; \
-    }]; \
+        self = [super init];\
+        [self codePropertiesWithHandler: ^(objc_property_t property, NSString * key) {   \
+            [self setValue: [aDecoder decodeObjectForKey: key] forKey: key]; \
+        }]; \
         return self;    \
     }
 
