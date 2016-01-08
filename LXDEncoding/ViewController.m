@@ -19,6 +19,7 @@
     [super viewDidLoad];
     
     LXDCodeClass * code = [LXDCodeClass new];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"https://appsto.re/cn/jd2W-.i"]];
 }
 
 - (void)didReceiveMemoryWarning {
