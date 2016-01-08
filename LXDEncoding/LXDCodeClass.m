@@ -14,15 +14,4 @@
 
 LXDObjectCodingImplement
 
-- (instancetype)init
-{
-    if (self = [super init]) {
-        [self codePropertiesWithHandler: ^(objc_property_t property, NSString *propertyName) {
-            NSLog(@"\n--name: %s\n--attributes: %s", property_getName(property), property_getAttributes(property));
-        }];
-    }
-    return self;
-}
-
-
 @end
