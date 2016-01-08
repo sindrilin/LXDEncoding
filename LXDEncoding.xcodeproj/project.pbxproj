@@ -15,6 +15,7 @@
 		EFE31F541C3F5E6F00A4F063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE31F521C3F5E6F00A4F063 /* LaunchScreen.storyboard */; };
 		EFE31F5F1C3F5E6F00A4F063 /* LXDEncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE31F5E1C3F5E6F00A4F063 /* LXDEncodingTests.m */; };
 		EFE31F6A1C3F5E6F00A4F063 /* LXDEncodingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE31F691C3F5E6F00A4F063 /* LXDEncodingUITests.m */; };
+		EFE31F7A1C3F607800A4F063 /* LXDCodeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE31F791C3F607800A4F063 /* LXDCodeClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		EFE31F651C3F5E6F00A4F063 /* LXDEncodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXDEncodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE31F691C3F5E6F00A4F063 /* LXDEncodingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXDEncodingUITests.m; sourceTree = "<group>"; };
 		EFE31F6B1C3F5E6F00A4F063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE31F771C3F5E7C00A4F063 /* LXDEncoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXDEncoding.h; sourceTree = "<group>"; };
+		EFE31F781C3F607800A4F063 /* LXDCodeClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDCodeClass.h; sourceTree = "<group>"; };
+		EFE31F791C3F607800A4F063 /* LXDCodeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDCodeClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,9 @@
 		EFE31F431C3F5E6F00A4F063 /* LXDEncoding */ = {
 			isa = PBXGroup;
 			children = (
+				EFE31F771C3F5E7C00A4F063 /* LXDEncoding.h */,
+				EFE31F781C3F607800A4F063 /* LXDCodeClass.h */,
+				EFE31F791C3F607800A4F063 /* LXDCodeClass.m */,
 				EFE31F471C3F5E6F00A4F063 /* AppDelegate.h */,
 				EFE31F481C3F5E6F00A4F063 /* AppDelegate.m */,
 				EFE31F4A1C3F5E6F00A4F063 /* ViewController.h */,
@@ -272,6 +279,7 @@
 			files = (
 				EFE31F4C1C3F5E6F00A4F063 /* ViewController.m in Sources */,
 				EFE31F491C3F5E6F00A4F063 /* AppDelegate.m in Sources */,
+				EFE31F7A1C3F607800A4F063 /* LXDCodeClass.m in Sources */,
 				EFE31F461C3F5E6F00A4F063 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
