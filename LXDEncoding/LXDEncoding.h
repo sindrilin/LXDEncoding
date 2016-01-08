@@ -10,7 +10,7 @@
 #define LXDEncoding_h
 
 #import <objc/runtime.h>
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef void(^LXDCodingHandler)(objc_property_t property, NSString * propertyName);
 
